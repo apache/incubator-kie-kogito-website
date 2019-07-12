@@ -1,0 +1,38 @@
+<section class="nav-content">
+  <div class="grid-wrapper">
+    <div class="width-12-12">
+      <div class="header navigation">
+        <div class="logo-wrapper">
+          <a href="{{site.baseurl}}/"><img class="project-logo" src="{{site.baseurl}}/assets/images/logo-placeholder.png"></a>
+        </div>
+        <div class="nav-container">
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="{{site.baseurl}}/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+              </li>
+              <li>
+                <a href="{{site.baseurl}}/downloads/" class="{% if page.url contains '/downloads/' %}active{% endif %}">Downloads</a>
+              </li>
+              <li>
+                <a href="{{site.baseurl}}/blog/" class="{% if page.url contains '/blog/' %}active{% endif %}">Blog</a>
+              </li>
+              <li>
+                <a href="{{site.baseurl}}/contribute/" class="{% if page.url contains '/contribute/' %}active{% endif %}">Contribute</a>
+              </li>
+              <li>
+                {% for latestVersion in site.data.downloads.latest_version %}
+                  <a href="{{site.baseurl}}/docs/{{ latestVersion.version_shortname }}/" class="{% if page.url contains '/docs/' %}active{% endif %}">Docs</a>
+                {% endfor %}
+              </li>
+              <li>
+                <a class="button-cta secondary" href="{{site.github_fork_url}}" target="_blank">Fork</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
