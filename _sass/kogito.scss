@@ -1,0 +1,134 @@
+// PROJECT styles to overwrite global.scss
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans:300,400,600,700&display=swap');
+
+html,
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: $dark-grey;
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: $dark-grey;
+  line-height: 1.2;
+}
+
+div.content {
+  padding: 4rem 13rem 6rem 13rem;
+  @media screen and (max-width: 1170px) { padding: 2rem 6rem 4rem 6rem; }
+  @media screen and (max-width: 480px) { padding: 2rem 2rem 4rem 2rem; }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: 400;
+  color: $dark-grey;
+}
+
+h1 {
+  color: $blue;
+}
+
+h2 {
+  color: $orange;
+}
+
+h3 {
+  color: $blue;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+a {
+  color: $link;
+  text-decoration: underline;
+  &:hover, &:active, &:focus {
+    color: $link-hover;
+  }
+}
+
+a.button-cta,
+button,
+input[type="submit"] {
+  color: $white;
+  background-color: $orange;
+  border: 2px solid $orange;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: .5rem;
+  padding: 1rem 3rem .75rem 3rem;
+  &:hover, &:active, &:focus {
+    background-color: darken($orange,10);
+    border-color: darken($orange,10);
+    color: $white;
+  }
+}
+
+a.button-cta.secondary {
+  border: 2px solid $orange;
+  color: $orange;
+  &:hover, &:active, &:focus {
+    background-color: darken($orange,10);;
+    border-color: darken($orange,10);;
+    color: $white;
+  }
+}
+
+hr {
+  border-width: 1px;
+  border-color: $blue;
+}
+
+code, pre {
+  background-color: #daedf5;
+  color: $dark-blue;
+  max-width: 900px;
+  @media screen and (max-width: 1024px) {
+    max-width: 500px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 300px;
+  }
+}
+
+.full-width-bg {
+  margin: 0 -13rem;
+  padding: 4rem 13rem 6rem 13rem;
+  @media screen and (max-width: 1170px) {
+    margin: 0 -6rem;
+    padding: 4rem 6rem 6rem 6rem;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 0 -2rem;
+    padding: 4rem 2rem 6rem 2rem;
+  }
+}
+
+.content > .full-width-bg {
+  margin-top: -4rem;
+  @media screen and (max-width: 1170px) {
+    margin-top: -2rem;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.content-centered {
+  grid-column: 2/12;
+  @media screen and (max-width: 768px) {
+    grid-column: 1/13;
+  }
+}

@@ -1,0 +1,24 @@
+<div class="content-slim project-footer">
+  <div class="footer-section">
+    <div class="logo-wrapper">
+      <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/images/kogito_logo_inverse.png" class="project-logo" title="Project Name"></a>
+    </div>
+  </div>
+  <div class="grid-wrapper">
+    <div class="grid__item width-4-12 footer-text">
+      <h6>Kogito is Open Source</h6>
+      <p>{{ site.data.projectfooter.footer_text }}</p>
+    </div>
+
+    {% for item in site.data.projectfooter.more_info %}
+      <div class="width-6-12 width-12-12-m more-info">
+        <h6>{{ item.title }}</h6>
+        <ul class="footer-links">
+          {% for entry in item.subfolderitems %}
+            <li><a href="{{ entry.url }}" target="_blank">{{ entry.page }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>

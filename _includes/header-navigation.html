@@ -1,0 +1,27 @@
+<section class="nav-content">
+  <div class="grid-wrapper">
+    <div class="width-12-12">
+      <div class="header navigation">
+        <div class="logo-wrapper">
+          <a href="{{site.baseurl}}/"><img class="project-logo" src="{{site.baseurl}}/assets/images/kogito-logo-PLACEHOLDER.png"></a>
+        </div>
+        <div class="nav-container">
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="{{site.baseurl}}/get-started" class="{% if page.url contains '/get-started/' %}active{% endif %}">Get Started</a>
+              </li>
+              <li>
+                <a href="{{site.baseurl}}/community/" class="{% if page.url contains '/community/' %}active{% endif %}">Community</a>
+              </li>
+              <li>
+                <a class="button-cta" href="{{site.github_fork_url}}" target="_blank">GitHub</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
