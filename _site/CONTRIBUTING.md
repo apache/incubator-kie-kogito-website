@@ -1,1 +1,0 @@
-# Contributing to the MWES Upstream Community Theme project

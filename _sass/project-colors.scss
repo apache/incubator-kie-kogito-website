@@ -1,2 +1,19 @@
 // PROJECT color palette
 
+$orange : #F5891F;
+$blue : #2A98BC;
+$light-blue : #97D4E8;
+$dark-blue : #085870;
+$dark-grey : #444444;
+$dark-gray : #444444;
+
+// Other colors 
+$link : $blue;
+$link-visited : $dark-blue;
+$link-hover : $dark-blue;
+
+// Helper classes
+.blue { color: $blue; }
+.orange { color: $orange; }
+.gray { color: $dark-gray; }
+.white { color: $white; }

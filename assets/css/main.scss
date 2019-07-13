@@ -27,8 +27,12 @@ $baseurl: "{{ site.baseurl }}";
 @import "core/includes/contact-form-band";
 
 @import "project-colors";
+@import "kogito";
 @import "components";
 @import "layouts/blog";
+@import "layouts/get-started";
 @import "includes/project-footer";
 @import "includes/redhat-footer";
 @import "includes/share-page";
+@import "includes/kogito-navigation";
+@import "includes/homepage-hero-band";

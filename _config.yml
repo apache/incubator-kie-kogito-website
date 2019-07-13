@@ -13,13 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Project Title
+title: Kogito
 email: project-contact-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new project site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/community-theme" # the subpath of your site, e.g. /blog
+  Cloud-native business automation for building intelligent applications, backed by battle-tested capabilities.
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: project_twitter_username ‏
 github_username:  project_github_username
@@ -60,7 +58,7 @@ defaults:
 pagination:
   
   # Site-wide kill switch, disabled here it doesn't run at all 
-  enabled: true
+  enabled: false
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
   debug: false
