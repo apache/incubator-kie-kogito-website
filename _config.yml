@@ -17,8 +17,8 @@ title: Kogito
 email: project-contact-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Cloud-native business automation for building intelligent applications, backed by battle-tested capabilities.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: project_twitter_username
 github_username:  kiegroup
 github_fork_url: "https://github.com/kiegroup/kogito-runtimes"
