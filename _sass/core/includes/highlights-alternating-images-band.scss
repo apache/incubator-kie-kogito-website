@@ -12,4 +12,10 @@
   img {
     max-width: 300px;
   }
+
+  @media screen and (max-width: 768px) {
+    .mobile-flip {
+      order: 1;
+    }
+  }
 }
