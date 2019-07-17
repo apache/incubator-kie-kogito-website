@@ -12,9 +12,13 @@
 }
 
 nav ul li {
-  a.active, a.active:hover {
+  a.active, 
+  a.active:hover, 
+  a.active:focus, 
+  a.active:visited {
     font-weight: 400;
     border-bottom: 4px solid $orange;
+    color: $link-visited;
     @media screen and (max-width: 1024px) {
       border: none;
     }
