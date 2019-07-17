@@ -78,14 +78,17 @@ input[type="submit"] {
   color: $white;
   background-color: $orange;
   border: 2px solid $orange;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
   margin: .5rem;
-  padding: 1rem 3rem .75rem 3rem;
+  padding: 1rem 4rem .75rem 4rem;
   &:hover, &:active, &:focus {
     background-color: darken($orange,10);
     border-color: darken($orange,10);
     color: $white;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1rem 2rem .75rem 2rem;
   }
 }
 
