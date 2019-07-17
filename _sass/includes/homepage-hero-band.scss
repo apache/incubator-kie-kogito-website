@@ -1,19 +1,41 @@
 .homepage-hero-band {
-  background-color: $dark-blue;
-  background-image: url($baseurl + '/assets/images/homepage/background.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom right;
-
-  @media screen and (max-width: 1024px) { background-size: cover; }
+  background: rgb(8,88,112); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(8,88,112,1) 0%, rgba(8,88,112,1) 50%, rgba(151,212,232,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(8,88,112,1) 0%,rgba(8,88,112,1) 50%,rgba(151,212,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(8,88,112,1) 0%,rgba(8,88,112,1) 50%,rgba(151,212,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#085870', endColorstr='#97d4e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  margin: -4rem -13rem 0 -13rem;
+  @media screen and (max-width: 1170px) {
+    margin: 0 -6rem;
+    margin-top: -2rem;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 0 -2rem;
+  }
+  .wrapper {
+    background-image: url($baseurl + '/assets/images/homepage/hero_background.svg');
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: left;
+    padding: 6rem 13rem 8rem 13rem;
+    @media screen and (max-width: 1024px) { background-size: cover; }
+    @media screen and (max-width: 1170px) {
+      padding: 4rem 6rem 6rem 6rem;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 4rem 2rem 6rem 2rem;
+    }
+  }
 
   h1, h2 {
     color: $white;
   }
 
   h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    @media screen and (min-width: 768px) {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
   }
 
   h2 {
@@ -21,7 +43,7 @@
     text-transform: uppercase;
     font-size: 1.2rem;
     line-height: 1;
-    max-width: 55rem;
+    max-width: 42rem;
   }
 
   a.button-cta,
