@@ -16,11 +16,11 @@ To download a released version of the Kogito examples, visit [this page](https:/
 
 The jbpm-quarkus-example shows how you can build your own order service by leveraging a business process to describe the logic that the service should follow.  The example includes a simple process that describes the steps that need to be followed when ordering items: a sequence of a script task (which is writing out some debug info) and a call activity invoking a sub-process, using a custom `Order` data element.
 
-![My helpful screenshot](/assets/images/get-started/kogito_gettingstarted_graphics_demo-one.png)
+![Kogito Getting Started Demo One Graphic](/assets/images/get-started/kogito_gettingstarted_graphics_demo-one.png)
 
 The sub-process invokes a custom Java service `CalculationService.calculateTotal`, followed by a user task to verify the order.
 
-![My helpful screenshot](/assets/images/get-started/kogito_gettingstarted_graphics_demo-two.png)
+![Kogito Getting Started Demo Two Graphic](/assets/images/get-started/kogito_gettingstarted_graphics_demo-two.png)
 
 Based on these two processes (defined using BPMN 2.0 format), the custom data object and the custom Java service mentioned earlier, the example shows how a new service is generated that exposes REST operations to create new orders (following the steps as defined in the main and sub-process), or to list and delete active orders. You can choose to create this service based on either Quarkus or SpringBoot.
 

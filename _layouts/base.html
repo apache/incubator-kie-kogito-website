@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }}{% if page.url != '/' %} | {{ site.title }}{% endif %}</title>
   <script id="adobe_dtm" src="//www.redhat.com/dtm.js" type="text/javascript"></script>
   <meta http-equiv="X-Frame-Options" content="deny">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
