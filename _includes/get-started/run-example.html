@@ -1,0 +1,19 @@
+<h1>Run the examples</h1>
+
+<div class="blue uppercase">This guide covers, Downloading the Kogito examples, Building and running one of the Kogito examples, and Testing the running example with some REST requests.</div>
+
+<h2>Download Kogito examples</h2>
+
+<p>To download a released version of the Kogito examples, visit <a href="https://github.com/kiegroup/kogito-examples/releases" target="_blank">this page</a> and select the latest version of the kogito-examples. Simply unzip it. It contains various out-of-the-box examples.  We will be focusing on the jbpm-quarkus-example here.</p>
+
+<h3>Building and running jbpm-quarkus-example</h3>
+<p>The jbpm-quarkus-example shows how you can build your own order service by leveraging a business process to describe the logic that the service should follow.  The example includes a simple process that describes the steps that need to be followed when ordering items: a sequence of a script task (which is writing out some debug info) and a call activity invoking a sub-process, using a custom <code>Order</code> data element.</p>
+
+<img src="{{site.baseurl}}/assets/images/get-started/kogito_gettingstarted_graphics_demo-one.png" alt="Kogito Getting Started Demo One Graphic" />
+
+<p>The sub-process invokes a custom Java service <code>CalculationService.calculateTotal</code>, followed by a user task to verify the order.</p>
+
+
+<img src="{{site.baseurl}}/assets/images/get-started/kogito_gettingstarted_graphics_demo-two.png" alt="Kogito Getting Started Demo Two Graphic" />
+
+<p>Based on these two processes (defined using BPMN 2.0 format), the custom data object and the custom Java service mentioned earlier, the example shows how a new service is generated that exposes REST operations to create new orders (following the steps as defined in the main and sub-process), or to list and delete active orders. You can choose to create this service based on either Quarkus or SpringBoot.</p>
