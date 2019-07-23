@@ -1,0 +1,37 @@
+<div class="tabs">
+  <!------------------- QUARKUS TAB ------------------->
+  <input type="radio" name="create-project-tab" id="createTab1" checked="checked">
+  <label for="createTab1">Quarkus</label>
+  <div class="tab">
+
+    <h2>Quarkus</h2>
+    <h3>Generate project</h3>
+    <pre><code>mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-quarkus-archetype -DarchetypeVersion=0.1.3 -DgroupId=com.company -DartifactId=sample-kogito</code></pre>
+    <p>Once the project is generated, import it into your Eclipse IDE. There is a single process included in the project out-of-the-box that allows to test the generated application. Simply build the project with maven and start the application (as before you have the option to start it using Quarkus dev mode, using JVM mode or using native image mode - we will use Quarkus dev mode in this example)</p>
+    
+    <h3>Start your application</h3>
+    <p>Open your command line and go into the newly created sample-kogito folder</p>
+    <pre><code>mvn clean package quarkus:dev</code></pre>
+  </div>
+  <!------------------- SPRINGBOOT TAB ------------------->
+  <input type="radio" name="create-project-tab" id="createTab2">
+  <label for="createTab2">SpringBoot</label>
+  <div class="tab">
+
+    <h2>SpringBoot</h2>
+    <h3>Generate project</h3>
+
+    <pre><code>mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-springboot-archetype -DarchetypeVersion=0.1.3 -DgroupId=com.company -DartifactId=sample-kogito</code></pre>
+
+    <p>Included in the project out-of-the-box that allows to test the generated application. Simply build the project with maven and start the application (as before you have the option to start it using SpringBoot maven plugin or as a normal Java service - we will use the SpringBoot maven plugin in this example)</p>
+
+    <h3>Start your application</h3>
+    <p>Open your command line and go into the newly created sample-kogito folder.</p>
+    <pre><code>mvn clean package spring-boot:run</code></pre>
+
+    <h3>Test your application</h3>
+    <p>Once the service is up and running, you can use the following examples to interact with the service.  Below are curl command you can run to do the REST calls but feel free to use the tool of your choice as well.</p>
+    <pre><code>curl -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{}' http://localhost:8080/tests</code></pre>
+    <p>That gives you a starting point where you can start adding your own business processes, rules and decisions!</p>
+  </div>
+</div>

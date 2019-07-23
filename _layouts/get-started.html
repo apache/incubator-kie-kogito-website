@@ -18,5 +18,12 @@ layout: base
 </div>
 <hr>
 <div class="grid-wrapper">
-  <div class="content-centered">{{ content }}</div>
+  <div class="content-centered">
+  
+  {% include get-started/run-example.html %}
+  {% include get-started/run-example-tabs.html %}
+  {% include get-started/create-first-app.html %}
+  {% include get-started/create-first-app-tabs.html %}
+
+  {{ content }}</div>
 </div>

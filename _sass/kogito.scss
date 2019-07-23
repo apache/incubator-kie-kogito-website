@@ -110,13 +110,6 @@ hr {
 code, pre {
   background-color: #daedf5;
   color: $dark-blue;
-  max-width: 900px;
-  @media screen and (max-width: 1024px) {
-    max-width: 500px;
-  }
-  @media screen and (max-width: 768px) {
-    max-width: 300px;
-  }
 }
 
 .full-width-bg {
