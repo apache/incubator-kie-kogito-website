@@ -114,6 +114,16 @@ code, pre {
   color: $dark-blue;
 }
 
+pre {
+  max-width: 900px;
+  @media screen and (max-width: 1024px) {
+    max-width: 500px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 300px;
+  }
+}
+
 .full-width-bg {
   margin: 0 -13rem;
   padding: 4rem 13rem 6rem 13rem;
