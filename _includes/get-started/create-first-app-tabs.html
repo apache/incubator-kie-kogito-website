@@ -13,6 +13,11 @@
     <h3>Start your application</h3>
     <p>Open your command line and go into the newly created sample-kogito folder</p>
     <pre><code>mvn clean package quarkus:dev</code></pre>
+    
+    <h3>Test your application</h3>
+    <p>Once the service is up and running, you can use the following examples to interact with the service.  Below are curl command you can run to do the REST calls but feel free to use the tool of your choice as well.</p>
+    <pre><code>curl -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{}' http://localhost:8080/tests</code></pre>
+    <p>That gives you a starting point where you can start adding your own business processes, rules and decisions!</p>
   </div>
   <!------------------- SPRINGBOOT TAB ------------------->
   <input type="radio" name="create-project-tab" id="createTab2">
