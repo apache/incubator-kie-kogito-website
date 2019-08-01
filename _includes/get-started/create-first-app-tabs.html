@@ -7,17 +7,36 @@
     <h2>Quarkus</h2>
 
     <h3>Generate project</h3>
-    <pre><code>mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-quarkus-archetype -DarchetypeVersion=0.1.3 -DgroupId=com.company -DartifactId=sample-kogito</code></pre>
-    <p>Once the project is generated, import it into your Eclipse IDE. There is a single process included in the project out-of-the-box that allows to test the generated application. Simply build the project with maven and start the application (as before you have the option to start it using Quarkus dev mode, using JVM mode or using native image mode - we will use Quarkus dev mode in this example)</p>
-    
+    <pre><code>mvn io.quarkus:quarkus-maven-plugin:create -DprojectGroupId=com.company -DprojectArtifactId=sample-kogito -Dextensions="kogito"</code></pre>
+    <p>Once the project is generated, import it into your Eclipse IDE. Simply build the project with maven and start the application (as before you have the option to start it using Quarkus dev mode, using JVM mode or using native image mode - we will use Quarkus dev mode in this example)</p>
+
     <h3>Start your application</h3>
     <p>Open your command line and go into the newly created sample-kogito folder</p>
     <pre><code>mvn clean package quarkus:dev</code></pre>
-    
-    <h3>Test your application</h3>
-    <p>Once the service is up and running, you can use the following examples to interact with the service.  Below are curl command you can run to do the REST calls but feel free to use the tool of your choice as well.</p>
-    <pre><code>curl -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{}' http://localhost:8080/tests</code></pre>
-    <p>That gives you a starting point where you can start adding your own business processes, rules and decisions!</p>
+
+    <h3>Implement your application logic</h3>
+    <p>You're now ready to implement your business logic that can be composed of business processes, rules, decision tables, java services and more.</p>
+
+    <h3>Build and run in JVM mode</h3>
+
+    <pre>
+      <code>
+mvn clean package
+java -jar target/jbpm-quarkus-example-{version}-runner.jar
+or on Windows
+java -jar target\jbpm-quarkus-example-{version}-runner.jar
+      </code>
+    </pre>
+
+    <h3>Build and run in native mode (requires GraalVM)</h3>
+    <pre>
+      <code>
+mvn clean package -Pnative
+./target/jbpm-quarkus-example-{version}-runner
+      </code>
+    </pre>
+
+    <div class="orange">Note: Have a look at complete quarkus kogito quite <a href="https://quarkus.io/guides/kogito-guide">here</a></div>
   </div>
   <!------------------- SPRINGBOOT TAB ------------------->
   <input type="radio" name="create-project-tab" id="createTab2">
@@ -35,9 +54,18 @@
     <p>Open your command line and go into the newly created sample-kogito folder.</p>
     <pre><code>mvn clean package spring-boot:run</code></pre>
 
-    <h3>Test your application</h3>
-    <p>Once the service is up and running, you can use the following examples to interact with the service.  Below are curl command you can run to do the REST calls but feel free to use the tool of your choice as well.</p>
-    <pre><code>curl -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{}' http://localhost:8080/tests</code></pre>
-    <p>That gives you a starting point where you can start adding your own business processes, rules and decisions!</p>
+    <h3>Implement your application logic</h3>
+    <p>You're now ready to implement your business logic that can be composed of business processes, rules, decision tables, java services and more.</p>
+
+    <h3>Build and run in JVM mode</h3>
+
+    <pre>
+      <code>
+mvn clean package
+java -jar target/jbpm-springboot-example-{version}.jar
+or on Windows
+java -jar target\jbpm-springboot-example-{version}.jar
+      </code>
+    </pre>
   </div>
 </div>
