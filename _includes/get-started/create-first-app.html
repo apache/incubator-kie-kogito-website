@@ -1,21 +1,19 @@
-<h2>Create your first application</h2>
+<h1>Create your first application</h1>
 <p>
-  This guide covers:
+  After running (one of) the out-of-the-box examples, you can also create your own application from scratch. This guide covers:
   <ul>
-    <li>Configuring your IDE with modeller</li>
-    <li>Generating new project</li>
+    <li>Configuring your IDE</li>
+    <li>Generating a new project</li>
     <li>Building the project</li>
     <li>Testing the project</li>
   </ul>
 </p>
 
-<h4>Install Eclipse with modelling plugins</h4>
-<p>
-  To be able to make use of visual modelling of your processes download Eclipse IDE and install from Marketplace
-  <ul>
-    <li>Eclipse BPMN2 Modeler plugin (with jBPM Runtime Extension)</li>
-  </ul>
-</p>
-<div class="orange">Note: Currently the Eclipse IDE is the only IDE that has complete support for both process and rule modelling but the team is working on bringing in web-based embeddable BPMN2, DMN and Scenario editors to VSCode and Eclipse Che.</div>
+<h3>Configuring your IDE</h3>
+<p>Currently the <a href="https://www.eclipse.org">Eclipse IDE</a> is the only IDE that has complete tooling support for both process and rule modeling.  As a result, we currently recommend using Eclipse IDE, but the steps below could also be followed with other IDEs.  You will however have to use an external tool for updating the process and/or rules.  The team is working on bringing in web-based embeddable editors (BPMN2, DMN and Scenario Simulation) to <a href="https://code.visualstudio.com/">Visual Studio Code</a> and <a href="https://eclipse.org/che">Eclipse Che</a> or <a href="https://developers.redhat.com/products/codeready-workspaces">Red Hat CodeReady Workspaces</a>.</p>
 
-<p>To build your own service that is powered by Kogito the best way is to start by generating project using Maven Archetype.</p>
+<h4>Install Eclipse with modeling plugins</h4>
+<p>
+Download and install <a href="https://www.eclipse.org/downloads/">Eclipse IDE for Java Developers</a>.  After starting Eclipse, also install the Eclipse BPMN2 Modeler from the Marketplace (Help -> Eclipse Marketplace... -> Search for 'BPMN2' to find Eclipse BPMN2 Modeler -> Click Install button -> also check 'BPMN2 Modeler - jBPM Runtime Extension Feature' and click Confirm etc. and restart Eclipse).</p>
+
+<p>To build your own service that is powered by Kogito, the easiest way to get started is by generating a sample project using Maven Archetype.  You can choose to create this service based on either <a href="https://quarkus.io" target="_blank">Quarkus</a> or <a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot</a> (select appropriate tab below).  If you don't have any preference, we recommend you get started with Quarkus since it is a Kubernetes native Java stack (supporting GraalVM) with a lot of capabilities (like hot-reload in dev mode) that we can leverage.</p></p>
