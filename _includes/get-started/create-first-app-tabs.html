@@ -4,68 +4,59 @@
   <label for="createTab1">Quarkus</label>
   <div class="tab">
 
-    <h2>Quarkus</h2>
+    <h2>Generate project</h2>
 
-    <h3>Generate project</h3>
+    <p>Create an empty folder where you would like to generate your project, open your command line, go into the newly created folder and execute the following command to generate the project there:</p>
     <pre><code>mvn io.quarkus:quarkus-maven-plugin:create -DprojectGroupId=com.company -DprojectArtifactId=sample-kogito -Dextensions="kogito"</code></pre>
-    <p>Once the project is generated, import it into your Eclipse IDE. Simply build the project with maven and start the application (as before you have the option to start it using Quarkus dev mode, using JVM mode or using native image mode - we will use Quarkus dev mode in this example)</p>
+    <p>This command generates a Maven project, importing the kogito extension that comes with all needed dependencies and configuration to equip your application with business automation. Once the project is generated, import it into your Eclipse IDE (File -> Import... -> Select Maven > Existing Maven Projects, click Next, select the folder where you created your project and click Finish).</p>
 
-    <h3>Start your application</h3>
-    <p>Open your command line and go into the newly created sample-kogito folder</p>
+    <h2>Implement your application logic</h2>
+    <p>You are now ready to implement your business logic that can be composed of business processes, rules, decision tables, java services and more.  For example, create a new process (*.bpmn2) in folder 'src/main/resources' that you can edit to encode your business logic.</p>
+
+    <h2>Start your application</h2>
+    <p>Open your command line and go into project folder you created.  Same as when running the pre-built examples, you can build and run your project in Quarkus development mode, in JVM mode or in native mode. Please pick one of the options (A, B or C) below.</p>
+
+    <h3>A. Build and run in development mode</h3>
     <pre><code>mvn clean package quarkus:dev</code></pre>
 
-    <h3>Implement your application logic</h3>
-    <p>You're now ready to implement your business logic that can be composed of business processes, rules, decision tables, java services and more.</p>
-
-    <h3>Build and run in JVM mode</h3>
-
-    <pre>
-      <code>
-mvn clean package
-java -jar target/jbpm-quarkus-example-{version}-runner.jar
+    <h3>B. Build and run in JVM mode</h3>
+    <pre><code>mvn clean package
+java -jar target/sample-kogito-1.0-SNAPSHOT-runner.jar</code></pre>
 or on Windows
-java -jar target\jbpm-quarkus-example-{version}-runner.jar
-      </code>
-    </pre>
+<pre><code>mvn clean package
+java -jar target\sample-kogito-1.0-SNAPSHOT-runner.jar</code></pre>
 
-    <h3>Build and run in native mode (requires GraalVM)</h3>
-    <pre>
-      <code>
-mvn clean package -Pnative
-./target/jbpm-quarkus-example-{version}-runner
-      </code>
-    </pre>
+    <h3>C. Build and run in native mode (requires GraalVM)</h3>
+    <pre><code>mvn clean package -Pnative
+./target/sample-kogito-1.0-SNAPSHOT-runner</code></pre>
 
-    <div class="orange">Note: Have a look at complete quarkus kogito quite <a href="https://quarkus.io/guides/kogito-guide">here</a></div>
+    <div class="orange">Note: Have a look at the complete quarkus kogito guide <a href="https://quarkus.io/guides/kogito-guide">here</a>.</div>
   </div>
   <!------------------- SPRINGBOOT TAB ------------------->
   <input type="radio" name="create-project-tab" id="createTab2">
-  <label for="createTab2">SpringBoot</label>
+  <label for="createTab2">Spring Boot</label>
   <div class="tab">
 
-    <h2>SpringBoot</h2>
-    <h3>Generate project</h3>
+    <h2>Generate project</h2>
 
-    <pre><code>mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-springboot-archetype -DarchetypeVersion=0.1.3 -DgroupId=com.company -DartifactId=sample-kogito</code></pre>
+    <p>Open your command line, go to a folder where you would like to generate the project and execute the following command to generate the project (inside a new sample-kogito folder):</p>
+    <pre><code>mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-springboot-archetype -DgroupId=org.kie.kogito -DartifactId=sample-kogito</code></pre>
+    <p>Once the project is generated, import it into your Eclipse IDE (File -> Import... -> Select Maven > Existing Maven Projects, click Next, select the folder where you created your project and click Finish).</p>
 
-    <p>Included in the project out-of-the-box that allows to test the generated application. Simply build the project with maven and start the application (as before you have the option to start it using SpringBoot maven plugin or as a normal Java service - we will use the SpringBoot maven plugin in this example)</p>
+    <h2>Implement your application logic</h2>
+    <p>You are now ready to implement your business logic that can be composed of business processes, rules, decision tables, java services and more.  Included in the project out-of-the-box is a process that you can edit to encode your business logic ('test-process.bpmn2' in folder 'src/main/resources').</p>
 
-    <h3>Start your application</h3>
-    <p>Open your command line and go into the newly created sample-kogito folder.</p>
+    <h2>Start your application</h2>
+    <p>Open your command line and go into the newly created sample-kogito folder.  Same as when running the pre-built examples, you can build and run your project in Spring Boot development mode or in JVM mode. Please pick one of the options (A or B) below.</p>
+
+    <h3>A. Build and run in development mode</h3>
     <pre><code>mvn clean package spring-boot:run</code></pre>
 
-    <h3>Implement your application logic</h3>
-    <p>You're now ready to implement your business logic that can be composed of business processes, rules, decision tables, java services and more.</p>
-
-    <h3>Build and run in JVM mode</h3>
-
-    <pre>
-      <code>
-mvn clean package
-java -jar target/jbpm-springboot-example-{version}.jar
+    <h3>B. Build and run in JVM mode</h3>
+    <pre><code>mvn clean package
+java -jar target/sample-kogito-1.0-SNAPSHOT-runner.jar</code></pre>
 or on Windows
-java -jar target\jbpm-springboot-example-{version}.jar
-      </code>
-    </pre>
+<pre><code>mvn clean package
+java -jar target\sample-kogito-1.0-SNAPSHOT-runner.jar</code></pre>
   </div>
 </div>

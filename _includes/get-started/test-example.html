@@ -1,0 +1,25 @@
+<h2>Test the running service</h2>
+<p>Once the service is up and running, you can use the following examples to interact with the service.  Below are curl command you can run to do the REST calls but feel free to use the tool of your choice as well.</p>
+
+<h3>POST /orders</h3>
+<p>Allows to create a new order with the given data:</p>
+<pre><code>curl -d '{"approver" : "john", "order" : {"orderNumber" : "12345", "shipped" : false}}' -H "Content-Type: application/json" -X POST http://localhost:8080/orders</code></pre>
+or on Windows
+<pre><code>curl -d "{\"approver\" : \"john\", \"order\" : {\"orderNumber\" : \"12345\", \"shipped\" : false}}" -H "Content-Type: application/json" -X POST http://localhost:8080/orders</code></pre>
+<p>As response the updated order is returned.</p>
+
+<h3>GET /orders</h3>
+<p>Returns list of orders currently active:</p>
+<pre><code>curl -X GET http://localhost:8080/orders</code></pre>
+<p>As response an array of orders is returned.</p>
+
+<h3>GET /orders/{id}</h3>
+<p>Returns order with given id (if active):</p>
+<pre><code>curl -X GET http://localhost:8080/orders/1</code></pre>
+<p>As response a single order is returned if found, otherwise no content (204) is returned.</p>
+
+<h3>DELETE /orders/{id}</h3>
+<p>Cancels order with given id</p>
+<pre><code>curl -X DELETE http://localhost:8080/orders/1</code></pre>
+
+<p>You have now successfully tested your service.  You can now also try one of the other options of how you can build and run your service if you want to.  You can try out other examples as well, all of them are equipped with a Readme file describing how to use them.</p> 
