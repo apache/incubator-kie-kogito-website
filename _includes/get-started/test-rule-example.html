@@ -1,0 +1,16 @@
+<h2>Test the running service</h2>
+<p>Once the service is up and running, you can use the following examples to interact with the service.  Below are curl command you can run to do the REST calls but feel free to use the tool of your choice as well. For example, when running in Quarkus development mode you can use the Swagger UI by navigating to <a href="http://localhost:8080/swagger-ui">http://localhost:8080/swagger-ui</a>).</p>
+
+<h3>POST /find-approved</h3>
+<p>Returns approved loan applications from the given facts:</p>
+<pre><code>curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{"maxAmount":5000,"loanApplications":[{"id":"ABC10001","amount":2000,"deposit":100,"applicant":{"age":45,"name":"John"}}, {"id":"ABC10002","amount":5000,"deposit":100,"applicant":{"age":25,"name":"Paul"}}, {"id":"ABC10015","amount":1000,"deposit":100,"applicant":{"age":12,"name":"George"}}]}' http://localhost:8080/find-approved</code></pre>
+or on Windows
+<pre><code>curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d "{\"maxAmount\":5000,\"loanApplications\":[{\"id\":\"ABC10001\",\"amount\":2000,\"deposit\":100,\"applicant\":{\"age\":45,\"name\":\"John\"}}, {\"id\":\"ABC10002\",\"amount\":5000,\"deposit\":100,\"applicant\":{\"age\":25,\"name\":\"Paul\"}}, {\"id\":\"ABC10015\",\"amount\":1000,\"deposit\":100,\"applicant\":{\"age\":12,\"name\":\"George\"}}]}" http://localhost:8080/find-approved</code></pre>
+<p>As response an array of loan applications is returned.</p>
+
+<h3>POST /find-not-approved-id-and-amount</h3>
+<p>Returns ids and amount values of rejected loan applications from the given facts:</p>
+<pre><code>curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{"maxAmount":5000,"loanApplications":[{"id":"ABC10001","amount":2000,"deposit":100,"applicant":{"age":45,"name":"John"}}, {"id":"ABC10002","amount":5000,"deposit":100,"applicant":{"age":25,"name":"Paul"}}, {"id":"ABC10015","amount":1000,"deposit":100,"applicant":{"age":12,"name":"George"}}]}' http://localhost:8080/find-not-approved-id-and-amount</code></pre>
+<p>As response an array of loan application ids and amount values is returned.</p>
+
+<p>You have now successfully tested your service.  You can now also try one of the other options of how you can build and run your service if you want to.  You can try out other examples as well, all of them are equipped with a Readme file describing how to use them.</p> 
