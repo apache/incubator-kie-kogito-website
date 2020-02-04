@@ -17,7 +17,7 @@
     <p>Open your command line and go into project folder you created.  Same as when running the pre-built examples, you can build and run your project in Quarkus development mode, in JVM mode or in native mode. Please pick one of the options (A, B or C) below.</p>
 
     <h3>A. Build and run in development mode</h3>
-    <pre><code>mvn clean package quarkus:dev</code></pre>
+    <pre><code>mvn clean compile quarkus:dev</code></pre>
 
     <h3>B. Build and run in JVM mode</h3>
     <pre><code>mvn clean package
@@ -50,7 +50,7 @@ java -jar target\sample-kogito-1.0-SNAPSHOT-runner.jar</code></pre>
     <p>Open your command line and go into the newly created sample-kogito folder.  Same as when running the pre-built examples, you can build and run your project in Spring Boot development mode or in JVM mode. Please pick one of the options (A or B) below.</p>
 
     <h3>A. Build and run in development mode</h3>
-    <pre><code>mvn clean package spring-boot:run</code></pre>
+    <pre><code>mvn clean compile spring-boot:run</code></pre>
 
     <h3>B. Build and run in JVM mode</h3>
     <pre><code>mvn clean package
