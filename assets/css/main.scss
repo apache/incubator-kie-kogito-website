@@ -31,6 +31,7 @@ $baseurl: "{{ site.baseurl }}";
 @import "components";
 @import "layouts/blog";
 @import "layouts/get-started";
+@import "layouts/guides";
 @import "includes/project-footer";
 @import "includes/redhat-footer";
 @import "includes/share-page";

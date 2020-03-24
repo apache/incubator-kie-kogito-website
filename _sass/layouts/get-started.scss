@@ -1,13 +1,15 @@
 .get-started {
   .content {
-    padding-top: 6rem;
+    padding: 0rem 13rem 1rem 13rem;
   }
+
   .gs-item {
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-gap: 1em;
     clear: both;
   }
+
   .step {
     font-size: 3rem;
     color: $white;
@@ -16,6 +18,7 @@
     border-radius: 25px;
     height: 50px;
   }
+
   .step-desc {
     color: $blue;
     text-transform: uppercase;
@@ -24,5 +27,18 @@
       color: $orange;
       font-weight: 600;
     }
+  }
+
+  .toc ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+  }
+
+  li > p, li {
+      margin: 0.5em 0;
+  }
+  hr {
+    margin: 2rem 0 1rem 0;
   }
 }
