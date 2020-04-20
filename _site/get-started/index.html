@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Get Started | Kogito</title>
+  <title>Kogito - Get Started | Kogito</title>
   <script id="adobe_dtm" src="//www.redhat.com/dtm.js" type="text/javascript"></script>
   <meta http-equiv="X-Frame-Options" content="deny">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -11,20 +11,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Cloud-native business automation for building intelligent applications, backed by battle-tested capabilities.">
-  <link rel="shortcut icon" type="image/png" href="//favicon.ico" >
-  <link href="/assets/css/main.css?1563912273954294000" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" >
+  <link href="/assets/css/main.css?1587048095561485754" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125236544-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157945096-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
  
-    gtag('config', 'UA-125236544-1');
+    gtag('config', 'UA-157945096-1');
   </script>
-
 
 </head>
 
@@ -34,17 +33,20 @@
     <div class="width-12-12">
       <div class="header navigation">
         <div class="logo-wrapper">
-          <a href="//"><img class="project-logo" src="//assets/images/kogito_logo_rgb_color_horizontal_default_450px.png" alt="Kogito Logo"></a>
+          <a href="/"><img class="project-logo" src="/assets/images/kogito_logo_rgb_color_horizontal_default_450px.png" alt="Kogito Logo"></a>
         </div>
         <div class="nav-container">
           <nav>
             <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
             <ul class="nav-list">
               <li>
-                <a href="//get-started" class="active">Get Started</a>
+                <a href="/get-started" class="active">Get Started</a>
               </li>
               <li>
-                <a href="//community/" class="">Community</a>
+                <a href="/guides" class="">Guides</a>
+              </li>
+              <li>
+                <a href="/community/" class="">Community</a>
               </li>
               <li>
                 <a class="button-cta" href="https://github.com/kiegroup/kogito-runtimes" target="_blank">GitHub</a>
@@ -57,195 +59,120 @@
   </div>
 </section>
   <div class="content">
-    <div class="grid-wrapper">
-  <div class="width-4-12 width-12-12-m gs-item">
-    <div class="step">1</div>
-    <div class="step-desc">You need <a href="https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Java" target="_blank">an IDE</a> like IntelliJ IDEA, Eclipse or VSCode. Eclipse is preferred with the BPMN modeler plugin.</div>
+    <div class="grid-wrapper gs-header">
+  <div class="grid__item width-12-12">
+    <h1 class="text-caps">Kogito - Get Started</h1>
   </div>
-  <div class="width-4-12 width-12-12-m gs-item">
-    <div class="step">2</div>
-    <div class="step-desc">You need <a href="https://adoptopenjdk.net/" target="_blank">JDK 8 to 11</a> with JAVA_HOME system property set correctly.<br/><br/>Optionally, get <a href="https://www.graalvm.org/" target="_blank">GraalVM</a> 19.0.2+ for native compilation with the GRAALVM_HOME system property set correctly.</div>
+  <div class="grid__item width-4-12 width-12-12-m">
+    <div class="gs-item">
+      <div class="step">1</div>
+      <div class="step-desc">
+          You need <a href="https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Java" target="_blank">an IDE</a> like <a href="https://code.visualstudio.com/Download">VSCode</a> (preferred), <a href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA</a>, or <a href="https://www.eclipse.org/downloads/">Eclipse</a>!
+      </div>
+    </div>
   </div>
-  <div class="width-4-12 width-12-12-m gs-item">
-    <div class="step">3</div>
-    <div class="step-desc">You need <a href="https://maven.apache.org/" target="_blank">Apache Maven 3.5.3</a> or later.</div>
+  <div class="grid__item width-4-12 width-12-12-m">
+    <div class="gs-item">
+      <div class="step">2</div>
+      <div class="step-desc">
+        <div class="step-desc">
+          You need a <a href="https://adoptopenjdk.net/" target="_blank">JDK 11</a> with JAVA_HOME system property set.
+        </div>
+        <div class="step-desc">
+          Optionally get <a href="https://www.graalvm.org/" target="_blank">GraalVM</a> 19.3.1 or 20.0.0 for native compilation.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid__item width-4-12 width-12-12-m">
+    <div class="gs-item">
+      <div class="step">3</div>
+      <div class="step-desc">
+        <div class="step-desc">
+          You need <a href="https://maven.apache.org/" target="_blank">Apache Maven 3.6.2+</a>.
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <hr>
 <div class="grid-wrapper">
-  <div class="content-centered">
-  
-  <h1>Run the examples</h1>
+  <div class="grid__item width-4-12 hide-mobile toc">
+  <h2 id="table-of-contents">Table of Contents</h2>
+  <h3 id="getting-started">Getting Started</h3>
 
-<div class="blue uppercase">This guide covers, Downloading the Kogito examples, Building and running one of the Kogito examples, and Testing the running example with some REST requests.</div>
-
-<h2>Download Kogito examples</h2>
-
-<p>To download a released version of the Kogito examples, visit <a href="https://github.com/kiegroup/kogito-examples/releases" target="_blank">this page</a> and select the latest version of the kogito-examples. Simply unzip it. It contains various out-of-the-box examples.  We will be focusing on the jbpm-quarkus-example here.</p>
-
-<h3>Building and running jbpm-quarkus-example</h3>
-<p>The jbpm-quarkus-example shows how you can build your own order service by leveraging a business process to describe the logic that the service should follow.  The example includes a simple process that describes the steps that need to be followed when ordering items: a sequence of a script task (which is writing out some debug info) and a call activity invoking a sub-process, using a custom <code>Order</code> data element.</p>
-
-<img src="//assets/images/get-started/kogito_gettingstarted_graphics_demo-one.png" alt="Kogito Getting Started Demo One Graphic" />
-
-<p>The sub-process invokes a custom Java service <code>CalculationService.calculateTotal</code>, followed by a user task to verify the order.</p>
-
-
-<img src="//assets/images/get-started/kogito_gettingstarted_graphics_demo-two.png" alt="Kogito Getting Started Demo Two Graphic" />
-
-<p>Based on these two processes (defined using BPMN 2.0 format), the custom data object and the custom Java service mentioned earlier, the example shows how a new service is generated that exposes REST operations to create new orders (following the steps as defined in the main and sub-process), or to list and delete active orders. You can choose to create this service based on either Quarkus or SpringBoot.</p>
-
-  <div class="tabs">
-  <!------------------- QUARKUS TAB ------------------->
-  <input type="radio" name="run-example-tab" id="runTab1" checked="checked">
-  <label for="runTab1">Quarkus</label>
-  <div class="tab">
-
-    <h2>Quarkus</h2>
-
-    <p>Open your command line and go into the jbpm-quarkus-example folder.  First we will build the service.  Based on the process definitions, this will generate the necessary code to turn this into domain-specific order service with REST endpoints to start, list and remove orders.<br/><br/>For local development, you have 3 options to build and start the service:
-      <ul>
-        <li>Since the service runs on top of Quarkus, you can take advantage of the development capabilities that Quarkus offers (like live reload etc.), and run the service in Quarkus development mode.</li>
-        <li>You can also run the service as a regular Java service.</li>
-        <li>You can take advantage of native image compilation (requires GraalVM), which will further optimize and minimize the service using native image compilation.</li>
-      </ul>
-    </p>
-    <h3>Build and run in development mode</h3>
-    <pre><code>mvn clean package quarkus:dev</code></pre>
-
-    <h3>Build and run in JVM mode</h3>
-
-    <pre><code>
-mvn clean package 
-java -jar target/jbpm-quarkus-example-{version}-runner.jar  
-or on Windows
-java -jar target\jbpm-quarkus-example-{version}-runner.jar
-    </code></pre>
-
-    <h3>Build and run in native mode (requires GraalVM)</h3>
-    <pre><code>
-mvn clean package -Pnative
-./target/jbpm-quarkus-example-{version}-runner
-    </code></pre>
-
-    <div class="orange">Note: This does not yet work on Windows, GraalVM and Quarkus should be rolling out support for Windows soon.</div>
-  </div>
-  
-  <!------------------- SPRINGBOOT TAB ------------------->
-  <input type="radio" name="run-example-tab" id="runTab2">
-  <label for="runTab2">SpringBoot</label>
-  <div class="tab">
-    
-    <h2>Spring boot</h2>
-
-    <p>Open your command line and go into the jbpm-springboot-example folder. First we will build the service.  Based on the process definitions, this will generate the necessary code to turn this into domain-specific order service with REST endpoints to start, list and remove orders.<br/><br/>For local development, you have 2 options to build and start the service:
-      <ul>
-        <li>Since the service runs on top of SpringBoot, you can take advantage of the development capabilities that SpringBoot offers and run the service using the SpringBoot maven plugin.</li>
-        <li>You can also run the service as a regular Java service.</li>
-      </ul>
-    </p>
-
-    <h3>Build and run in development mode</h3>
-    <pre><code>mvn clean package spring-boot:run</code></pre>
-
-    <h3>Build and run in JVM mode</h3>
-    <pre><code>
-mvn clean package 
-java -jar target/jbpm-springboot-example-{version}.jar  
-or on Windows
-java -jar target\jbpm-springboot-example-{version}.jar
-    </code></pre>
-
-    <h3>Test the running service</h3>
-    <p>Once the service is up and running, you can use the following examples to interact with the service.  Below are curl command you can run to do the REST calls but feel free to use the tool of your choice as well.</p>
-
-    <h3>POST /orders</h3>
-    <p>Allows to create a new order with the given data:</p>
-    <pre><code>curl -d '{"approver" : "john", "order" : {"orderNumber" : "12345", "shipped" : false}}' -H "Content-Type: application/json" -X POST http://localhost:8080/orders</code></pre>
-
-    <p>As response the updated order is returned.</p>
-
-    <h3>GET /orders</h3>
-    <p>Returns list of orders currently active:</p>
-    <pre><code>curl -X GET http://localhost:8080/orders</code></pre>
-    <p>As response an array of orders is returned.</p>
-
-    <h3>GET /orders/{id}</h3>
-    <p>Returns order with given id (if active):</p>
-    <pre><code>curl -X GET http://localhost:8080/orders/1</code></pre>
-    <p>As response a single order is returned if found, otherwise no content (204) is returned.</p>
-
-    <h3>DELETE /orders/{id}</h3>
-    <p>Cancels order with given id</p>
-    <pre><code>curl -X DELETE http://localhost:8080/orders/1</code></pre>
-    <p>You can try out other examples as well, all of them are equipped with a Readme file describing how to use them.</p>
-  </div>
-</div>
-
-  <h2>Create your first application</h2>
-<p>
-  This guide covers:
   <ul>
-    <li>Configuring your IDE with modeller</li>
-    <li>Generating new project</li>
-    <li>Building the project</li>
-    <li>Testing the project</li>
+    <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-automation_kogito-docs">Kogito business automation overview</a></li>
+    <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-creating-running">Creating and running your first Kogito services</a></li>
+    <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#ref-kogito-app-examples_kogito-creating-running">Example applications with Kogito services</a></li>
+    <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-deploying-on-openshift">Deploying Kogito services on OpenShift</a></li>
+    <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-travel-agency_kogito-deploying-on-openshift">Travel agency tutorial for Kogito services on OpenShift</a></li>
   </ul>
-</p>
 
-<h4>Install Eclipse with modelling plugins</h4>
-<p>
-  To be able to make use of visual modelling of your processes download Eclipse IDE and install from Marketplace
+  <h3 id="guides">Guides</h3>
+
   <ul>
-    <li>Eclipse BPMN2 Modeler plugin (with jBPM Runtime Extension)</li>
+    <li><a href="/guides">Get More Guides</a></li>
   </ul>
-</p>
-<div class="orange">Note: Currently the Eclipse IDE is the only IDE that has complete support for both process and rule modelling but the team is working on bringing in web-based embeddable BPMN2, DMN and Scenario editors to VSCode and Eclipse Che.</div>
 
-<p>To build your own service that is powered by Kogito the best way is to start by generating project using Maven Archetype.</p>
+</div>
+<div class="grid__item width-8-12 width-12-12-m gs-content">
+<div class="guide-item">
+    <h2 id="kogito-business-automation-overview">Kogito business automation overview</h2>
 
-  <div class="tabs">
-  <!------------------- QUARKUS TAB ------------------->
-  <input type="radio" name="create-project-tab" id="createTab1" checked="checked">
-  <label for="createTab1">Quarkus</label>
-  <div class="tab">
+    <p>Learn what is Kogito and when it can become an essential core of your domain-specific cloud-native set of services.</p>
 
-    <h2>Quarkus</h2>
+    <ul>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#ref-kogito-glossary_kogito-configuring">Kogito glossary of terms</a></li>
+    </ul>
 
-    <h3>Generate project</h3>
-    <pre><code>mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-quarkus-archetype -DarchetypeVersion=0.1.3 -DgroupId=com.company -DartifactId=sample-kogito</code></pre>
-    <p>Once the project is generated, import it into your Eclipse IDE. There is a single process included in the project out-of-the-box that allows to test the generated application. Simply build the project with maven and start the application (as before you have the option to start it using Quarkus dev mode, using JVM mode or using native image mode - we will use Quarkus dev mode in this example)</p>
-    
-    <h3>Start your application</h3>
-    <p>Open your command line and go into the newly created sample-kogito folder</p>
-    <pre><code>mvn clean package quarkus:dev</code></pre>
+    <p><a href="https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-automation_kogito-docs" class="button-cta secondary">READ THE GUIDE</a></p>
   </div>
-  <!------------------- SPRINGBOOT TAB ------------------->
-  <input type="radio" name="create-project-tab" id="createTab2">
-  <label for="createTab2">SpringBoot</label>
-  <div class="tab">
 
-    <h2>SpringBoot</h2>
-    <h3>Generate project</h3>
+<div class="guide-item">
+    <h2 id="creating-and-running-your-first-kogito-services">Creating and running your first Kogito services</h2>
 
-    <pre><code>mvn archetype:generate -DarchetypeGroupId=org.kie.kogito -DarchetypeArtifactId=kogito-springboot-archetype -DarchetypeVersion=0.1.3 -DgroupId=com.company -DartifactId=sample-kogito</code></pre>
+    <p>As a developer of business processes and rules, you can use Kogito business automation to build cloud-native applications that adapt to your business domain and tooling.</p>
 
-    <p>Included in the project out-of-the-box that allows to test the generated application. Simply build the project with maven and start the application (as before you have the option to start it using SpringBoot maven plugin or as a normal Java service - we will use the SpringBoot maven plugin in this example)</p>
+    <p>This guide covers:</p>
 
-    <h3>Start your application</h3>
-    <p>Open your command line and go into the newly created sample-kogito folder.</p>
-    <pre><code>mvn clean package spring-boot:run</code></pre>
+    <ul>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#ref-kogito-app-examples_kogito-creating-running">Example applications with Kogito services</a></li>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-modelers_kogito-creating-running">Kogito BPMN and DMN modelers</a></li>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-creating-project_kogito-creating-running">Creating a Maven project for a Kogito service</a></li>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-designing-app_kogito-creating-running">Designing the application logic for a Kogito service using DMN and BPMN</a></li>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-running-app_kogito-creating-running">Running a Kogito service</a></li>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-interacting-app_kogito-creating-running">Interacting with a running Kogito service</a></li>
+    </ul>
 
-    <h3>Test your application</h3>
-    <p>Once the service is up and running, you can use the following examples to interact with the service.  Below are curl command you can run to do the REST calls but feel free to use the tool of your choice as well.</p>
-    <pre><code>curl -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{}' http://localhost:8080/tests</code></pre>
-    <p>That gives you a starting point where you can start adding your own business processes, rules and decisions!</p>
+    <p><a href="https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-creating-running" class="button-cta secondary">START CODING</a></p>
   </div>
+
+<div class="guide-item">
+    <h2 id="deploying-kogito-services-on-openshift">Deploying Kogito services on OpenShift</h2>
+
+    <p>As a developer of business processes and decisions, you can deploy Kogito services on OpenShift for cloud implementation. The Kogito Operator automates many of the deployment steps for you or guides you through the deployment process. You can use the Kogito command-line interface (CLI) to interact with the Kogito Operator for deployment tasks.</p>
+
+    <p>To help you deploy your services on OpenShift, Kogito provides the following resources:</p>
+
+    <ul>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-deploying-on-ocp-console_kogito-deploying-on-openshift">Deploying Kogito services on OpenShift using the OpenShift web console</a></li>
+      <li><a href="https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-deploying-on-ocp-kogito-cli_kogito-deploying-on-openshift">Deploying Kogito services on OpenShift using the Kogito CLI</a></li>
+    </ul>
+
+    <p><a href="https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-deploying-on-openshift" class="button-cta secondary">READ THE GUIDE</a></p>
+  </div>
+
+<div class="guide-item">
+    <h2 id="travel-agency-tutorial-for-kogito-services-on-openshift">Travel agency tutorial for Kogito services on OpenShift</h2>
+
+    <p>The Kogito travel agency tutorial in GitHub contains a sequence of example applications with Kogito services, each of them increasing in complexity. These travel agency applications illustrate many of the advanced configuration options you can use whether you are deploying services locally or on OpenShift, such as process persistence with Infinispan, messaging with Kafka, and application data indexing with the Data Index Service.</p>
+
+    <p><a href="https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-travel-agency_kogito-deploying-on-openshift" class="button-cta secondary">DO THE TUTORIAL</a></p>
+  </div>
+
 </div>
 
-
-  
-</div>
 </div>
 
   </div>
@@ -253,7 +180,7 @@ java -jar target\jbpm-springboot-example-{version}.jar
   <div class="content-slim project-footer">
   <div class="footer-section">
     <div class="logo-wrapper">
-      <a href="//"><img src="//assets/images/kogito_logo_rgb_color_horizontal_reverse_450px.png" class="project-logo" alt="Kogito Logo"></a>
+      <a href="/"><img src="/assets/images/kogito_logo_rgb_color_horizontal_reverse_450px.png" class="project-logo" alt="Kogito Logo"></a>
     </div>
   </div>
   <div class="grid-wrapper">
@@ -356,7 +283,7 @@ java -jar target\jbpm-springboot-example-{version}.jar
       a Red Hat sponsored project   
     </span>
     <span class="redhat-logo">
-      <a href="https://www.redhat.com/" target="_blank"><img src="//assets/images/redhat_reversed.svg" alt="Red Hat Logo"></a>
+      <a href="https://www.redhat.com/" target="_blank"><img src="/assets/images/redhat_reversed.svg" alt="Red Hat Logo"></a>
     </span>
   </div>
 </div>
@@ -368,6 +295,14 @@ java -jar target\jbpm-springboot-example-{version}.jar
     if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
         _satellite.pageBottom();
     }
+  </script>
+  <script>
+    const response = fetch('https://api.github.com/repos/kiegroup/kogito-runtimes/tags?page=1&per_page=1');
+    response.then(r => {
+      r.json().then(latestTag => {
+        document.getElementById('latestVersion').innerHTML = `Latest updates (${latestTag[0].name})`;
+      });
+    });  
   </script>
 </body>
 

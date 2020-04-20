@@ -25,7 +25,6 @@
     gtag('config', 'UA-157945096-1');
   </script>
 
-
 </head>
 
 <body class="{% if page.url == '/' %}homepage{% else %}{{page.layout}}{% endif %}">
@@ -43,6 +42,14 @@
     if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
         _satellite.pageBottom();
     }
+  </script>
+  <script>
+    const response = fetch('https://api.github.com/repos/kiegroup/kogito-runtimes/tags?page=1&per_page=1');
+    response.then(r => {
+      r.json().then(latestTag => {
+        document.getElementById('latestVersion').innerHTML = `Latest updates (${latestTag[0].name})`;
+      });
+    });  
   </script>
 </body>
 
