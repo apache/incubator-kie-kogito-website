@@ -142,9 +142,6 @@ The Kogito Management Console is a user interface for viewing the state of all a
 </div>
 
 <h2 id="Environment_configuration">Environment configuration</h2>
- - [Configuring Kogito supporting services and runtime capabilities](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-configuring)
- - [Using the Kogito Data Index Service](https://docs.jboss.org/kogito/release/latest/html_single/#con-data-index-service_kogito-configuring)
- - [Using the Kogito Jobs Service](https://docs.jboss.org/kogito/release/latest/html_single/#con-jobs-service_kogito-configuring)
 
 <div class="guide-item" markdown="1">
 ### Configuring Kogito supporting services and runtime capabilities
