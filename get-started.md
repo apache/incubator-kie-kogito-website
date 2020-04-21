@@ -25,6 +25,7 @@ permalink: /get-started/
 
 Learn what is Kogito and when it can become an essential core of your domain-specific cloud-native set of services.
 
+* <a href="https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-automation_kogito-docs">Kogito Business Automation introduction</a>
 * <a href="https://docs.jboss.org/kogito/release/latest/html_single/#ref-kogito-glossary_kogito-configuring">Kogito glossary of terms</a>
 
 <a href="https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-automation_kogito-docs" class="button-cta secondary">READ THE GUIDE</a>

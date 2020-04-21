@@ -109,11 +109,6 @@ As a developer of business decisions, your understanding of the decision engine 
 
 <h2 id="Process_services">Process services</h2>
 
-[Developing process services with Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-developing-process-services)
- - [BPMN 2.0 support in Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#con-bpmn_kogito-developing-process-services)
- - [Persistence in Kogito services](https://docs.jboss.org/kogito/release/latest/html_single/#con-persistence_kogito-developing-process-services)
- - [Kogito Management Console](https://docs.jboss.org/kogito/release/latest/html_single/#con-management-console_kogito-developing-process-services)
-
 <div class="guide-item" markdown="1">
 ### Developing process services with Kogito
 
