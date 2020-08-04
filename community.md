@@ -5,7 +5,7 @@ permalink: /community/
 ---
 
 # Kogito Community
-<br>
+<br/>
 
 ## Getting help
 
