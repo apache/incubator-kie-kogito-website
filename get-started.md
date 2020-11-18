@@ -18,6 +18,10 @@ permalink: /get-started/
 
  - [Get More Guides]({{site.baseurl}}/guides)
 
+### Examples
+
+ - [Kogito examples](https://github.com/kiegroup/kogito-examples/)
+
 </div>
 <div class="grid__item width-8-12 width-12-12-m gs-content">
 <div class="guide-item" markdown="1">
