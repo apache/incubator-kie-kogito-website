@@ -13,9 +13,19 @@ permalink: /community/
 
 If you have any questions, make sure to take a look at the [Kogito documentation](https://docs.jboss.org/kogito/release/latest/html_single/). 
 
+### Examples
+
+Kogito can be used in many ways, so to help you get started, we provide a wide range of examples demonstrating from simple hello world to more advanced use cases
+using DMN, BPMN, KNative, Serverless Workflow and more. Head to [Kogito examples](https://github.com/kiegroup/kogito-examples/) repository in GitHub and start exploring.
+The team is constantly updating this repository with new and exciting features as they are added to Kogito. 
+
 ### Discussions and Mailing list
 
 You can also ask questions on our mailing list. Join the Google group via email kogito-development+subscribe@googlegroups.com or by visiting the [Google Groups page](https://groups.google.com/d/forum/kogito-development).
+
+### Blog
+
+Follow helpful articles and posts on [Kie Blog](https://blog.kie.org/) presenting interesting use-cases and examples of Kogito in action.
 
 ### Chat
 
