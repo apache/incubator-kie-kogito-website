@@ -36,6 +36,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 _For more information regarding the use of Jekyll, please refer to the [Jekyll Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/)._
 
+### Using Docker to run Jekyll
+
+Alternatively you can use Docker to test your changes locally.
+
+To run it, simply execute the following Docker command from the project root directory:
+
+`
+docker run --rm --volume="$PWD:/srv/jekyll" -it -p 4000:4000 jekyll/jekyll:3 jekyll serve  
+`
+
+To preview your site, browse to http://localhost:4000
+
 ## Deployment on GitHub Pages
 
 To deploy your site using GitHub Pages you will need to add the [github-pages gem](https://github.com/github/pages-gem).
