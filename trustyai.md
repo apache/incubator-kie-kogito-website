@@ -9,9 +9,9 @@ permalink: /trustyai/
 
 The TrustyAI initiative aims to offer value-added services to the Kogito ecosystem to make it a trustworthy Business Automation solution. The project currently focuses on the open DMN standard and introspects the decision-making process using the following aspects:
 
-- **Explainability**: XAI algorithms to enrich model execution information
-- **Tracing and Accountability**: extract, collect and publish metadata for auditing and compliance
-- **Runtime Monitoring**: a service should be easily observable using dashboards both from a business and an operational perspective
+- **Explainability**: Enrich model execution information through XAI algorithms
+- **Tracing and Accountability**: Extract, collect, and publish metadata for auditing and compliance
+- **Runtime Monitoring**: Expose services in dashboards to assess data from both a business and an operational perspective
 
 ## Value-added services
 
