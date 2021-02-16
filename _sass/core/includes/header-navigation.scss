@@ -9,7 +9,9 @@ $nav-height: 70px;
 
 section.nav-content {
   padding: 0 13rem;
-  @media screen and (max-width: 1170px) { padding: 0 6rem; }
+  @media screen and (max-width: 1400px) { padding: 0 4rem; }
+  @media screen and (max-width: 1150px) { padding: 0 2rem; }
+  @media screen and (max-width: 1024px) { padding: 0 6rem; }
   @media screen and (max-width: 480px) { padding: 0 2rem; }
 }
 
@@ -143,7 +145,6 @@ nav ul.nav-list {
     ul {
       display: none;
       li {
-        float: none;
         float: none;
         margin: .5rem 0;
         a,
