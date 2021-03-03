@@ -21,11 +21,11 @@ permalink: /guides/
  - [Deploying Kogito services on OpenShift](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-deploying-on-openshift)
 
 ### Decision services
- - [Developing decision services with Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-developing-decision-services)
- - [Using DMN models in Kogito services](https://docs.jboss.org/kogito/release/latest/html_single/#_using_dmn_models_in_kogito_services)
- - [Using DRL rules in Kogito services](https://docs.jboss.org/kogito/release/latest/html_single/#_using_drl_rules_in_kogito_services)
- - [Using spreadsheet decision tables in Kogito services](https://docs.jboss.org/kogito/release/latest/html_single/#_using_spreadsheet_decision_tables_in_kogito_services)
- - [Decision engine in Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#_decision_engine_in_kogito)
+ - [Developing decision services with Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#collection-kogito-developing-decision-services)
+ - [Using DMN models in Kogito services](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-using-dmn-models)
+ - [Using DRL rules in Kogito services](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-using-drl-rules)
+ - [Using spreadsheet decision tables in Kogito services](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-using-spreadsheet-decision-tables)
+ - [Decision engine in Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-decision-engine)
 
 ### Process services
  - [Developing process services with Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#chap-kogito-developing-process-services)
