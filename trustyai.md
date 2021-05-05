@@ -68,4 +68,4 @@ You can find more details about what is going on in the [TrustyAI blogposts](htt
 
 ### Papers
 
-A detailed analysis of TrustyAI's explainability techniques is avaible in the [TrustyAI Explainability Toolkit](https://arxiv.org/abs/2104.12717) pre-print.
+A detailed analysis of TrustyAI's explainability techniques is available in the [TrustyAI Explainability Toolkit](https://arxiv.org/abs/2104.12717) pre-print.
