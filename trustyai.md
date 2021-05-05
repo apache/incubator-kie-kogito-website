@@ -65,3 +65,7 @@ All TrustyAI services are integrated with the Kogito platform and documented as 
 ### Blog
 
 You can find more details about what is going on in the [TrustyAI blogposts](https://blog.kie.org/all?s=trusty) on the [KIE blog](https://blog.kie.org/).
+
+### Papers
+
+A detailed analysis of TrustyAI's explainability techniques is available in the [TrustyAI Explainability Toolkit](https://arxiv.org/abs/2104.12717) pre-print.
