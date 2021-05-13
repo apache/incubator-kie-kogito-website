@@ -11,7 +11,7 @@ permalink: /community/
 
 ### Documentation
 
-If you have any questions, make sure to take a look at the [Kogito documentation](https://docs.jboss.org/kogito/release/latest/html_single/). 
+If you have any questions, make sure to take a look at the [Kogito documentation](https://docs.kogito.kie.org/latest/html_single/). 
 
 ### Examples
 
