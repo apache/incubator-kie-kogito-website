@@ -52,7 +52,7 @@ Join our community chat by joining the [#trusty-ai](https://kie.zulipchat.com/#n
 
 ## Resources
 
-All TrustyAI services are integrated with the Kogito platform and documented as part of the [Kogito documentation](https://docs.jboss.org/kogito/release/latest/html_single/).
+All TrustyAI services are integrated with the Kogito platform and documented as part of the [Kogito documentation](https://docs.kogito.kie.org/latest/html_single/).
 
 ### Videos
 
