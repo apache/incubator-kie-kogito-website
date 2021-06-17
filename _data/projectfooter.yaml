@@ -47,6 +47,8 @@ more_info:
         url: http://modcluster.io/
       - page: ModeShape
         url: http://modeshape.jboss.org/
+      - page: Narayana
+        url: https://www.narayana.io/
       - page: OptaPlanner
         url: https://www.optaplanner.org/
       - page: Picketbox
