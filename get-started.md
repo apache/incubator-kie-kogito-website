@@ -59,7 +59,7 @@ As a developer of business processes and decisions, you can deploy Kogito servic
 
 To help you deploy your services on OpenShift, Kogito provides the following resources:
 
-* <a href="https://docs.kogito.kie.org/latest/html_single/#proc-kogito-deploying-on-ocp-console_kogito-deploying-on-openshift">Deploying Kogito services on OpenShift using the OpenShift web console</a>
+* <a href="https://docs.kogito.kie.org/latest/html_single/#proc-kogito-service-deployment-openshift-web-console_kogito-deploying-on-openshift">Deploying Kogito services on OpenShift using the OpenShift web console</a>
 * <a href="https://docs.kogito.kie.org/latest/html_single/#proc-kogito-deploying-on-ocp-kogito-cli_kogito-deploying-on-openshift">Deploying Kogito services on OpenShift using the Kogito CLI</a>
 
 <a href="https://docs.kogito.kie.org/latest/html_single/#chap-kogito-deploying-on-openshift" class="button-cta secondary">READ THE GUIDE</a>
