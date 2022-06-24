@@ -1,4 +1,4 @@
-ame: Check-URL
+name: Check-URL
 
 on:
   pull_request:
