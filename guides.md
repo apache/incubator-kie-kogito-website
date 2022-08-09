@@ -33,8 +33,8 @@ permalink: /guides/
  - [Persistence in Kogito services](https://docs.kogito.kie.org/latest/html_single/#con-persistence_kogito-developing-process-services)
  - [Kogito Management Console](https://docs.kogito.kie.org/latest/html_single/#con-management-console_kogito-developing-process-services)
 
-### Serverless Workflow
-- [Orchestrating microservices with Serverless Workflow in Kogito](https://docs.kogito.kie.org/latest/html_single/#chap-kogito-orchestrating-serverless)
+### Serverless Workflow Guides
+- [Serverless Workflow in Kogito](https://kiegroup.github.io/kogito-docs)
 
 ### Environment configuration
  - [Configuring Kogito supporting services and runtime capabilities](https://docs.kogito.kie.org/latest/html_single/#chap-kogito-configuring)
@@ -151,7 +151,7 @@ The Kogito Management Console is a user interface for viewing the state of all a
 
 As a microservices developer or architect, you can use the Serverless Workflow specification to orchestrate application services in your Kogito project. The Serverless Workflow specification enables you to define declarative workflow models that orchestrate event-driven, serverless applications. The specification is hosted by the Cloud Native Computing Foundation (CNCF) and is currently a CNCF Sandbox project that is progressing to become an Incubating project.
 
-<a href="https://docs.kogito.kie.org/latest/html_single/#chap-kogito-orchestrating-serverless" class="button-cta secondary">READ THE GUIDE</a>
+<a href="https://kiegroup.github.io/kogito-docs/" class="button-cta secondary">GO TO SERVERLESS WORKFLOW GUIDES</a>
 </div>
 
 <h2 id="Environment_configuration">Environment configuration</h2>
