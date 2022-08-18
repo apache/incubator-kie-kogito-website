@@ -17,13 +17,14 @@ jobs:
         with:
           java-version: 11
       - name: urls-checker
-        uses: urlstechie/urlchecker-action@0.0.27
+        uses: urlstechie/urlchecker-action@0.0.32
         with:
           subfolder: _site
           file_types: .yml, .yaml, .html
           include_files: _layouts/base.html
           exclude_files: _site/README.md, _site/feed.xml
           print_all: false
+          verbose: true
           timeout: 5
           retry_count: 3
           force_pass : true
