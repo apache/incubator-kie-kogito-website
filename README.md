@@ -31,6 +31,7 @@ These instructions will get you a copy of the project up and running on your loc
 6. Build the site and make it available on a local server
   `bundle exec jekyll serve`
 7. To preview your site, browse to http://localhost:4000
+8. Before sending a PR, run `bundle exec jekyll build`
 
 > If you encounter any unexpected errors during the above, please refer to the [troubleshooting](https://jekyllrb.com/docs/troubleshooting/#configuration-problems) page or the [requirements](https://jekyllrb.com/docs/installation/#requirements) page, as you might be missing development headers or other prerequisites.
 
