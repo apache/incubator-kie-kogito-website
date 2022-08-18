@@ -19,7 +19,7 @@ jobs:
       - name: urls-checker
         uses: urlstechie/urlchecker-action@0.0.27
         with:
-          subfolder: _data, _site
+          subfolder: _site
           file_types: .yml, .yaml, .html
           include_files: _layouts/base.html
           exclude_files: _site/README.md, _site/feed.xml
