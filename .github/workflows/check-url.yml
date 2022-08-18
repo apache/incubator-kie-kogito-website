@@ -26,7 +26,7 @@ jobs:
         # subfolder with files to test
         subfolder: _site
         # A comma-separated list of file types to cover in the URL checks
-        file_types: .md,.py,.rst
+        file_types: .md,.py,.rst,.html
         # Choose whether to include file with no URLs in the prints.
         print_all: false
         # The timeout seconds to provide to requests, defaults to 5 seconds
