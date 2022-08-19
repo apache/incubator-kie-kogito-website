@@ -22,7 +22,7 @@ jobs:
           bundle check || bundle install
           bundle exec jekyll build
     - name: urls-checker
-      uses: urlstechie/urlchecker-action@master
+      uses: urlchecker-action@update/fakeuser-agent
       with:
         # subfolder with files to test
         subfolder: _site
