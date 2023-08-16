@@ -53,8 +53,6 @@ You have gone through the <a href="{{site.baseurl}}/get-started">Getting Started
 
 Kogito provides extensions and application graphical modelers that you can use to design Business Process Model and Notation (BPMN) process models and Decision Model and Notation (DMN) decision models for your Kogito services.
 
-For convenience, all Kogito BPMN and DMN modelers are available in the [Business Modeler Hub desktop application](https://docs.kogito.kie.org/latest/html_single/#proc-kogito-modelers_kogito-creating-running).
-
 <a href="https://docs.kogito.kie.org/latest/html_single/#con-kogito-modelers_kogito-creating-running" class="button-cta secondary">READ THE GUIDE</a>
 </div>
 
