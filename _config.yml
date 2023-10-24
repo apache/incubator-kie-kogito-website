@@ -39,7 +39,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kogito.kie.org/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kogito_kie
 github_username:  kiegroup
-github_fork_url: "https://github.com/kiegroup/kogito-runtimes"
+github_fork_url: "https://github.com/apache/incubator-kie-kogito-runtimes"
 
 # Build settings
 markdown: kramdown

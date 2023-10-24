@@ -20,7 +20,7 @@ permalink: /get-started/
 
 ### Examples
 
- - [Kogito examples](https://github.com/kiegroup/kogito-examples/)
+ - [Kogito examples](https://github.com/apache/incubator-kie-kogito-examples/)
 
 </div>
 <div class="grid__item width-8-12 width-12-12-m gs-content">
