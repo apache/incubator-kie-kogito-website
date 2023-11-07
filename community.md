@@ -16,7 +16,7 @@ If you have any questions, make sure to take a look at the [Kogito documentation
 ### Examples
 
 Kogito can be used in many ways, so to help you get started, we provide a wide range of examples demonstrating from simple hello world to more advanced use cases
-using DMN, BPMN, KNative, Serverless Workflow and more. Head to [Kogito examples](https://github.com/kiegroup/kogito-examples/) repository in GitHub and start exploring.
+using DMN, BPMN, KNative, Serverless Workflow and more. Head to [Kogito examples](https://github.com/apache/incubator-kie-kogito-examples/) repository in GitHub and start exploring.
 The team is constantly updating this repository with new and exciting features as they are added to Kogito. 
 
 ### Discussions and Mailing list

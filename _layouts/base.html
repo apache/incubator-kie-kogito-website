@@ -44,7 +44,7 @@
     }
   </script>
   <script>
-    const response = fetch('https://api.github.com/repos/kiegroup/kogito-runtimes/tags?page=1&per_page=1');
+    const response = fetch('https://api.github.com/repos/apache/incubator-kie-kogito-runtimes/tags?page=1&per_page=1');
     response.then(r => {
       r.json().then(latestTag => {
         document.getElementById('latestVersion').innerHTML = `Latest updates (${latestTag[0].name})`;
